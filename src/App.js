@@ -13,7 +13,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          뭐가 바뀐거야...
         </a>
       </header>
     </div>
