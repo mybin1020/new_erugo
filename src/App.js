@@ -1,7 +1,13 @@
+import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
+  const [counter, setCounter] = React.useState(0);
+  const onClick = () => {
+    // setCounter(counter + 1);
+    setCounter((current) => current + 1);
+  };
   return (
     <div className="App">
       <header className="App-header">
@@ -15,6 +21,10 @@ function App() {
         >
           뭐가 바뀐거야...
         </a>
+        <div>
+          <h3>Total click:{counter}</h3>
+          <button onClick={onClick}>Click me!</button>
+        </div>
       </header>
     </div>
   );
